@@ -6,6 +6,7 @@ import PlaylistBarIcon from '../components/PlaylistBarIcon';
 import SoundBarIcon from '../components/SoundBarIcon';
 import RadioStream from '../screens/RadioStream';
 import PlaylistScreen from '../screens/PlaylistScreen';
+import LinksScreen from '../screens/LinksScreen';
 
 const HomeStack = createStackNavigator({
   Home: RadioStream,
@@ -18,22 +19,38 @@ HomeStack.navigationOptions = {
       focused={focused}
     />
   ),
+  tabBarOptions: {
+    style: {
+      backgroundColor: '#E390BD',
+    },
+    labelStyle:{
+      color: '#000',
+    }
+  }
 };
 
-const PlaylistStack = createStackNavigator({
-  Links: PlaylistScreen,
+const LinksStack = createStackNavigator({
+  Links: LinksScreen,
 });
 
-PlaylistStack.navigationOptions = {
+LinksStack.navigationOptions = {
   tabBarLabel: 'Playlists',
   tabBarIcon: ({ focused }) => (
     <PlaylistBarIcon
       focused={focused}
     />
   ),
+  tabBarOptions: {
+   style: {
+     backgroundColor: '#E390BD',
+   },
+   labelStyle:{
+     color: '#000',
+   }
+ }
 };
 
 export default createBottomTabNavigator({
   HomeStack,
-  PlaylistStack,
+  LinksStack,
 });
