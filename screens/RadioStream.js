@@ -11,18 +11,52 @@ import {
 import { MonoText } from '../components/StyledText';
 import { ReactNativeAudioStreaming, Player } from 'react-native-audio-streaming';
 
+const cheerio = require('react-native-cheerio');
+const wrmcUrl = 'http://wrmc.middlebury.edu';
+
 export default class RadioStream extends React.Component {
+
+  async cheeriorequest() {
+
+      const wresponse =await fetch(wrmcUrl)
+        .then(function(response){
+            return response.text();
+        })
+        .catch(function (err) {
+            return err;
+        });
+
+      const htmlString = wresponse;
+      console.log('wtf')
+      console.log(htmlString)
+      const $ = cheerio.load(htmlString);
+
+
+  //   const wresponse = await fetch(wrmcUrl).then(function(response){
+  //       return response.json();
+  //       }).catch(function(error) {
+  //           console.log('There has been a problem with your fetch operation: ' + error.message);
+  //           // ADD THIS THROW error
+  //           throw error;
+  //       });
+  //   const htmlString = await wresponse.text().catch((error)=>{
+  //    console.log("Api call error");
+  //    alert(error.message);
+  // });
+    //const $ = cheerio.load(htmlString);
+  };
 
   constructor() {
     super()
-    //ReactNativeAudioStreaming.play("http://boombox.middlebury.edu:8000/", {showIniOSMediaCenter: true, showInAndroidNotifications: true});
+    this.cheeriorequest()
     this.state = {
       playing: false,
       img: require('../logos/logo_play.png')
     };
     this._onPressButton=this._onPressButton.bind(this)
 
-  }
+};
+
   static navigationOptions = {
     header: null,
   };
