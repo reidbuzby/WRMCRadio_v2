@@ -17,19 +17,44 @@ const wrmcUrl = 'http://wrmc.middlebury.edu';
 export default class RadioStream extends React.Component {
 
   async cheeriorequest() {
-
-      const wresponse =await fetch(wrmcUrl)
-        .then(function(response){
-            return response.text();
-        })
-        .catch(function (err) {
-            return err;
-        });
-
+      // const wresponse = ''
+        // await fetch(wrmcUrl)
+        // .then(function(response){
+        //     wresponse = response.text()
+        //     return wresponse;
+        // })
+        // .then((wresponse) =>{
+        //     const htmlString = wresponse;
+        //     console.log('wtf');
+        //     console.log('htmlString')
+        //     const $ = cheerio.load(htmlString);
+        //     this.setState({
+        //         currentDJs: $('span.dj').first().text()
+        //     });
+        //     console.log(this.state.currentDJs)
+        // })
+        // .catch(function (err) {
+        //     return err;
+        // });
+      //
+      const wresponse = await fetch(wrmcUrl)
+      .then(function(response){
+          return response.text()
+      });
       const htmlString = wresponse;
-      console.log('wtf')
-      console.log(htmlString)
+      console.log('wtf');
       const $ = cheerio.load(htmlString);
+      // this.state.currentDJs = $('span.dj').first().text();
+      // this.state.loading = false;
+     // console.log(this.state.currentDJs)
+      this.setState({
+          currentDJs : $('section.onair').find('span.dj').first().text(),
+          currentShow : $('section.onair').find('a').text(),
+          currentArtist : $('section.playlist').find('span.artist').first().text(),
+          currentSong : $('section.playlist').find('span.title').first().text(),
+          loading : false
+        });
+        console.log($('section.onair').find('a').text())
 
 
   //   const wresponse = await fetch(wrmcUrl).then(function(response){
@@ -48,12 +73,18 @@ export default class RadioStream extends React.Component {
 
   constructor() {
     super()
-    this.cheeriorequest()
     this.state = {
       playing: false,
-      img: require('../logos/logo_play.png')
+      img: require('../logos/logo_play.png'),
+      currentShow: '',
+      currentSong: '',
+      currentArtist: '',
+      currentDJs: '',
+      loading: true,
     };
     this._onPressButton=this._onPressButton.bind(this)
+    this.cheeriorequest=this.cheeriorequest.bind(this)
+    this.cheeriorequest()
 
 };
 
@@ -81,6 +112,10 @@ export default class RadioStream extends React.Component {
   render() {
     return (
       <View>
+        <Text style={{fontSize:20}}>
+        {'You\'re listening to '}{this.state.currentSong}{' by '}{this.state.currentArtist}{'\n'}
+        {this.state.currentShow == '' ? '' : 'With: '}{this.state.loading ? 'Loading...' : this.state.currentDJs}
+        </Text>
       <TouchableOpacity onPress={this._onPressButton} underlayColor="white">
         <View style={styles.button}>
           <Image source={this.state.img}
