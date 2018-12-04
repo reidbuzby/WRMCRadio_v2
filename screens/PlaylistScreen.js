@@ -5,6 +5,10 @@ const cheerio = require('react-native-cheerio');
 const wrmcUrl = 'http://wrmc.middlebury.edu';
 
 export default class PlaylistScreen extends React.Component {
+    static navigationOptions = {
+      title: 'Current Playlist',
+      headerTitleStyle : {fontFamily: 'PaytoneOne-Regular',},
+    };
 
   constructor() {
     super()
@@ -14,6 +18,10 @@ export default class PlaylistScreen extends React.Component {
     }
     this.getPlaylist = this.getPlaylist.bind(this);
     this.getPlaylist();
+  }
+
+  componentDidMount(){
+      this.timer = setInterval(()=> this.getPlaylist(), 60000)
   }
 
   async getPlaylist() {
