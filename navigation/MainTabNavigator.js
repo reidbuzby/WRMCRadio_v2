@@ -22,6 +22,7 @@ HomeStack.navigationOptions = {
   tabBarOptions: {
     style: {
       backgroundColor: '#E390BD',
+      height: 45
     },
     labelStyle:{
       color: '#000',

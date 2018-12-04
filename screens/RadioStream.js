@@ -87,10 +87,10 @@ export default class RadioStream extends React.Component {
 
     render() {
         return (
-            <View>
+            <View style = {{flex:1, backgroundColor: 'rgba(0,0,0,0.1)'}}>
                 <Text style = {styles.ShowTitle}>
                     {this.state.currentShow}{'\n'}
-                    <Text style = {{fontSize: 15, fontFamily: 'PaytoneOne-Regular',flex:1}}>
+                    <Text style = {{fontSize: 15, fontFamily: 'PaytoneOne-Regular',}}>
                         {this.state.currentShow == '' ? '' : 'with '}{this.state.loading ? 'Loading...' : this.state.currentDJs}
                     </Text>
                 </Text>
@@ -100,11 +100,10 @@ export default class RadioStream extends React.Component {
                         style={{width: 400, height: 100, resizeMode: 'contain', marginTop: 100}} />
                     </View>
                 </TouchableOpacity>
-                <Text style={{fontSize:20, fontFamily: 'PaytoneOne-Regular', textAlign: 'center', position: 'relative', bottom: -height/3, backgroundColor: '#8bcee3'}}>
-                {this.state.currentSong == '' ? '' : 'You\'re listening to "'}{this.state.currentSong}
-                {this.state.currentArtist == '' ? '' :'" \n by '}{this.state.currentArtist}{'\n'}
-
-                </Text>
+                    <Text style={this.state.currentSong == '' ? null : styles.songContainer}>
+                        {this.state.currentSong == '' ? '' : 'You\'re listening to "'}{this.state.currentSong}
+                        {this.state.currentArtist == '' ? '' :'" \n by '}{this.state.currentArtist}{'\n'}
+                    </Text>
             </View>
         );
     }
@@ -125,10 +124,12 @@ const styles = StyleSheet.create({
     contentContainer: {
         paddingTop: 30,
     },
-    welcomeContainer: {
-        alignItems: 'center',
-        marginTop: 10,
-        marginBottom: 20,
+    songContainer: {fontSize:20,
+        fontFamily: 'PaytoneOne-Regular',
+        textAlign: 'center',
+        backgroundColor: '#8bcee3',
+        position: 'relative',
+        bottom: -215,
     },
     welcomeImage: {
         width: 100,
