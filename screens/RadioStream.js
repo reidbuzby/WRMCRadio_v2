@@ -42,7 +42,6 @@ export default class RadioStream extends React.Component {
           return response.text()
       });
       const htmlString = wresponse;
-      console.log('wtf');
       const $ = cheerio.load(htmlString);
       // this.state.currentDJs = $('span.dj').first().text();
       // this.state.loading = false;

@@ -25,7 +25,8 @@
     "react-native-vector-icons": "6.1.0",
     "react-navigation": "^2.16.0",
     "react-test-renderer": "16.6.1",
-    "vim": "^0.1.0"
+    "vim": "^0.1.0",
+    "react-native-table-component": "^1.1.8"
   },
   "jest": {
     "preset": "react-native"
