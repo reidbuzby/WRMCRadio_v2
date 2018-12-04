@@ -5,7 +5,7 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 import PlaylistBarIcon from '../components/PlaylistBarIcon';
 import SoundBarIcon from '../components/SoundBarIcon';
 import RadioStream from '../screens/RadioStream';
-import PlaylistScreen from '../screens/PlaylistScreen';
+import ScheduleScreen from '../screens/ScheduleScreen';
 import LinksScreen from '../screens/LinksScreen';
 
 const HomeStack = createStackNavigator({
@@ -50,7 +50,29 @@ LinksStack.navigationOptions = {
  }
 };
 
+const ScheduleStack = createStackNavigator({
+  Links: ScheduleScreen,
+});
+
+ScheduleStack.navigationOptions = {
+  tabBarLabel: 'Schedule',
+  tabBarIcon: ({ focused }) => (
+    <PlaylistBarIcon
+      focused={focused}
+    />
+  ),
+  tabBarOptions: {
+   style: {
+     backgroundColor: '#E390BD',
+   },
+   labelStyle:{
+     color: '#000',
+   }
+ }
+};
+
 export default createBottomTabNavigator({
   HomeStack,
   LinksStack,
+  ScheduleStack,
 });
