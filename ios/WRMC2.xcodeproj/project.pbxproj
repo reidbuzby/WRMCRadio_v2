@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -57,6 +56,8 @@
 		E6BA2FDC6A284D1593BBE6B2 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11B666541E5F4DE5A4F851DC /* EvilIcons.ttf */; };
 		ED0EED76E2974534AAA22A3F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F00CA0BC8E1A404BA463B48A /* Octicons.ttf */; };
 		F90F6C1D0F4B4F448735FECF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29E3645DF8914591B83B7427 /* Ionicons.ttf */; };
+		E64862C9B947407C8C836AF3 /* PaytoneOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEF97D2A3435B8A54DFD8 /* PaytoneOne-Regular.ttf */; };
+		5500FEC9B9E04104990CB302 /* SpaceMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2DBB5E53C724D94A14F95C0 /* SpaceMono-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -417,6 +418,8 @@
 		D766C1601232453F9C3E4674 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		F00CA0BC8E1A404BA463B48A /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		F4F14CB3EB5741F4B468EE5C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		BB4DEF97D2A3435B8A54DFD8 /* PaytoneOne-Regular.ttf */ = {isa = PBXFileReference; name = "PaytoneOne-Regular.ttf"; path = "../assets/fonts/PaytoneOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C2DBB5E53C724D94A14F95C0 /* SpaceMono-Regular.ttf */ = {isa = PBXFileReference; name = "SpaceMono-Regular.ttf"; path = "../assets/fonts/SpaceMono-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -704,6 +707,8 @@
 				F00CA0BC8E1A404BA463B48A /* Octicons.ttf */,
 				635D4146796F4DB1AEC8427E /* SimpleLineIcons.ttf */,
 				D766C1601232453F9C3E4674 /* Zocial.ttf */,
+				BB4DEF97D2A3435B8A54DFD8 /* PaytoneOne-Regular.ttf */,
+				C2DBB5E53C724D94A14F95C0 /* SpaceMono-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1251,6 +1256,8 @@
 				ED0EED76E2974534AAA22A3F /* Octicons.ttf in Resources */,
 				3139CAA0348F4A4E958655EF /* SimpleLineIcons.ttf in Resources */,
 				5A6FED8861E042C890B2A605 /* Zocial.ttf in Resources */,
+				E64862C9B947407C8C836AF3 /* PaytoneOne-Regular.ttf in Resources */,
+				5500FEC9B9E04104990CB302 /* SpaceMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
