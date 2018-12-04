@@ -6,7 +6,7 @@ import PlaylistBarIcon from '../components/PlaylistBarIcon';
 import SoundBarIcon from '../components/SoundBarIcon';
 import RadioStream from '../screens/RadioStream';
 import ScheduleScreen from '../screens/ScheduleScreen';
-import LinksScreen from '../screens/LinksScreen';
+import PlaylistScreen from '../screens/PlaylistScreen';
 
 const HomeStack = createStackNavigator({
   Home: RadioStream,
@@ -29,11 +29,11 @@ HomeStack.navigationOptions = {
   }
 };
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen,
+const PlaylistStack = createStackNavigator({
+  Links: PlaylistScreen,
 });
 
-LinksStack.navigationOptions = {
+PlaylistStack.navigationOptions = {
   tabBarLabel: 'Playlists',
   tabBarIcon: ({ focused }) => (
     <PlaylistBarIcon
@@ -73,6 +73,6 @@ ScheduleStack.navigationOptions = {
 
 export default createBottomTabNavigator({
   HomeStack,
-  LinksStack,
+  PlaylistStack,
   ScheduleStack,
 });
