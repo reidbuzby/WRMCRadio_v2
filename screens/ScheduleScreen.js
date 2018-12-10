@@ -163,7 +163,7 @@ export default class ScheduleScreen extends React.Component {
       var pheight = Dimensions.get('window').height;
       console.log(pheight)
     return (
-        <View style = {{height: pheight- 120}}>
+        <View style = {{height: pheight - 120 }}>
    <WebView
    source = {{ html: this.state.schedhtml}}
    />

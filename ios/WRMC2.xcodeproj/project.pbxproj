@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -40,6 +41,7 @@
 		3139CAA0348F4A4E958655EF /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 635D4146796F4DB1AEC8427E /* SimpleLineIcons.ttf */; };
 		3F13356DBE754491B73DB2AA /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32375A7D82E14C678ECC4131 /* Feather.ttf */; };
 		4A91DB902115449C921F74F0 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4F14CB3EB5741F4B468EE5C /* FontAwesome5_Regular.ttf */; };
+		5500FEC9B9E04104990CB302 /* SpaceMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2DBB5E53C724D94A14F95C0 /* SpaceMono-Regular.ttf */; };
 		5658E9562D3045C592AA9C51 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 516C0AE76269495781808890 /* MaterialCommunityIcons.ttf */; };
 		5760E96AD0B3492A964F0C99 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C6FA1763594395893CD90F /* libRNVectorIcons.a */; };
 		5A6FED8861E042C890B2A605 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D766C1601232453F9C3E4674 /* Zocial.ttf */; };
@@ -53,11 +55,10 @@
 		D136B546F08947C9AD02123F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F8F8619F9AE47D88BBDEA32 /* FontAwesome.ttf */; };
 		D43617512A6943BCAE916BC5 /* libRNVectorIcons-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D16168605D44CB95747145 /* libRNVectorIcons-tvOS.a */; };
 		E34B44B2C37A4F67BD6FC701 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D363FA7CC05845E1846C9B75 /* MaterialIcons.ttf */; };
+		E64862C9B947407C8C836AF3 /* PaytoneOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEF97D2A3435B8A54DFD8 /* PaytoneOne-Regular.ttf */; };
 		E6BA2FDC6A284D1593BBE6B2 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11B666541E5F4DE5A4F851DC /* EvilIcons.ttf */; };
 		ED0EED76E2974534AAA22A3F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F00CA0BC8E1A404BA463B48A /* Octicons.ttf */; };
 		F90F6C1D0F4B4F448735FECF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29E3645DF8914591B83B7427 /* Ionicons.ttf */; };
-		E64862C9B947407C8C836AF3 /* PaytoneOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEF97D2A3435B8A54DFD8 /* PaytoneOne-Regular.ttf */; };
-		5500FEC9B9E04104990CB302 /* SpaceMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2DBB5E53C724D94A14F95C0 /* SpaceMono-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -410,6 +411,8 @@
 		A0D16168605D44CB95747145 /* libRNVectorIcons-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNVectorIcons-tvOS.a"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ADCB0418AADC4FD2824544BF /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		BB4DEF97D2A3435B8A54DFD8 /* PaytoneOne-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PaytoneOne-Regular.ttf"; path = "../assets/fonts/PaytoneOne-Regular.ttf"; sourceTree = "<group>"; };
+		C2DBB5E53C724D94A14F95C0 /* SpaceMono-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceMono-Regular.ttf"; path = "../assets/fonts/SpaceMono-Regular.ttf"; sourceTree = "<group>"; };
 		C4448872D917413BB99299F5 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		CC0B0594D92B458E8BCFCFEB /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		CD2EF51521A9E8560019C60B /* ReactNativeAudioStreaming.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeAudioStreaming.xcodeproj; path = "../node_modules/react-native-audio-streaming/ios/ReactNativeAudioStreaming.xcodeproj"; sourceTree = "<group>"; };
@@ -418,8 +421,6 @@
 		D766C1601232453F9C3E4674 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		F00CA0BC8E1A404BA463B48A /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		F4F14CB3EB5741F4B468EE5C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		BB4DEF97D2A3435B8A54DFD8 /* PaytoneOne-Regular.ttf */ = {isa = PBXFileReference; name = "PaytoneOne-Regular.ttf"; path = "../assets/fonts/PaytoneOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C2DBB5E53C724D94A14F95C0 /* SpaceMono-Regular.ttf */ = {isa = PBXFileReference; name = "SpaceMono-Regular.ttf"; path = "../assets/fonts/SpaceMono-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -834,10 +835,20 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = PUCQF5WL25;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = PUCQF5WL25;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PUCQF5WL25;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
@@ -1376,6 +1387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PUCQF5WL25;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1407,6 +1419,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = PUCQF5WL25;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1435,6 +1448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = PUCQF5WL25;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1457,6 +1471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PUCQF5WL25;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1484,6 +1499,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PUCQF5WL25;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1520,6 +1536,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PUCQF5WL25;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

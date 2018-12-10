@@ -15,8 +15,8 @@ import { ReactNativeAudioStreaming, Player } from 'react-native-audio-streaming'
 const cheerio = require('react-native-cheerio');
 const wrmcUrl = 'http://wrmc.middlebury.edu';
 
-const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height;
+const WIDTH = Dimensions.get('window').width;
+const HEIGHT = Dimensions.get('window').height;
 
 export default class RadioStream extends React.Component {
 
@@ -95,12 +95,12 @@ export default class RadioStream extends React.Component {
                     </Text>
                 </Text>
                 <TouchableOpacity onPress={this._onPressButton} underlayColor="white">
-                    <View style={styles.button}>
+                    <View>
                         <Image source={this.state.img}
-                        style={{width: 400, height: 100, resizeMode: 'contain', marginTop: 100}} />
+                        style={{width: WIDTH, height: 100, resizeMode: 'contain', marginTop: 100}} />
                     </View>
                 </TouchableOpacity>
-                    <Text style={this.state.currentSong == '' ? null : styles.songContainer}>
+                    <Text style={this.state.currentSong == '' ? styles.songContainer : styles.songContainer}>
                         {this.state.currentSong == '' ? '' : 'You\'re listening to "'}{this.state.currentSong}
                         {this.state.currentArtist == '' ? '' :'" \n by '}{this.state.currentArtist}{'\n'}
                     </Text>
@@ -128,8 +128,10 @@ const styles = StyleSheet.create({
         fontFamily: 'PaytoneOne-Regular',
         textAlign: 'center',
         backgroundColor: '#8bcee3',
-        position: 'relative',
-        bottom: -215,
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0
     },
     welcomeImage: {
         width: 100,
@@ -158,7 +160,7 @@ const styles = StyleSheet.create({
         lineHeight: 50,
         textAlign: 'center',
         fontFamily: 'PaytoneOne-Regular',
-        marginTop:15,
+        marginTop:30,
     },
     tabBarInfoContainer: {
         position: 'absolute',
