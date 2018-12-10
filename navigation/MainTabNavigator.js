@@ -7,6 +7,7 @@ import SoundBarIcon from '../components/SoundBarIcon';
 import RadioStream from '../screens/RadioStream';
 import ScheduleScreen from '../screens/ScheduleScreen';
 import PlaylistScreen from '../screens/PlaylistScreen';
+import ScheduleBarIcon from '../components/ScheduleBarIcon';
 
 const HomeStack = createStackNavigator({
   Home: RadioStream,
@@ -58,7 +59,7 @@ const ScheduleStack = createStackNavigator({
 ScheduleStack.navigationOptions = {
   tabBarLabel: 'Schedule',
   tabBarIcon: ({ focused }) => (
-    <PlaylistBarIcon
+    <ScheduleBarIcon
       focused={focused}
     />
   ),
