@@ -100,7 +100,7 @@ export default class RadioStream extends React.Component {
                         style={{width: WIDTH, height: 100, resizeMode: 'contain', marginTop: 100}} />
                     </View>
                 </TouchableOpacity>
-                    <Text style={this.state.currentSong == '' ? styles.songContainer : styles.songContainer}>
+                    <Text style={this.state.currentSong == '' ? null : styles.songContainer}>
                         {this.state.currentSong == '' ? '' : 'You\'re listening to "'}{this.state.currentSong}
                         {this.state.currentArtist == '' ? '' :'" \n by '}{this.state.currentArtist}{'\n'}
                     </Text>
