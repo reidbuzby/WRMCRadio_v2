@@ -8,7 +8,7 @@ The key interpretable files are the JavaScript files found in the 'screens' dire
 
 # To run locally in iOS:
 
-Clone this repository.
+Clone this repository and run 'npm install' in the cloned directory to install the node modules. 
 
 Open ios/WRMC2.xcodeproj in Xcode. Before running the project from Xcode, you must install the react-native-audio-streaming library. Instructions on how to do this are located on their Github here: https://github.com/tlenclos/react-native-audio-streaming.
 
