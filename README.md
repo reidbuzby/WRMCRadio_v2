@@ -15,3 +15,16 @@ Open ios/WRMC2.xcodeproj in Xcode. Before running the project from Xcode, you mu
 After this is done, you should be able to build and run the project from Xcode. 
 
 # To run locally in Andorid:
+
+  Clone this repository and run 'npm install' in the cloned directory to install the node modules.
+  
+  You must install react-native-audio-streaming. There are multiple files and constants that need to be modified for the
+  android side, and detailed instructions for this are included here: https://github.com/tlenclos/react-native-audio-streaming.
+  
+  Whether you run it with React-Native or Android Studio, you then need to open Android Studio and launch an Android Simulator.
+  
+  # run with React-Native:
+          From the main directory run 'react-native run-android'
+  # run as Android Studio project:
+          In android studio, click Open -> Existing Project. Select the 'android' subdirectory from the root directory of this repository. 
+          From there you can build and run it on an open simulator from Android Studio using the 'Build' and 'Run' Buttons.
